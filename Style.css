@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.player {
+    background: linear-gradient(145deg, #3a3a3a, #1f1f1f);
+    border-radius: 25px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6), inset 0 5px 10px rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    text-align: center;
+    width: 370px;
+    border: 2px solid #444;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.player:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.7), inset 0 5px 10px rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #e6e6e6;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.song {
+    margin-bottom: 30px;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #333;
+    border-radius: 12px;
+    border: 2px solid #4a4a4a;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5), inset 0 3px 5px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+audio:hover {
+    transform: scale(1.05);
+}
+
+p {
+    margin: 0;
+    color: #ccc;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #666;
+    border-radius: 50%;
+    border: 2px solid #4a4a4a;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+audio::-webkit-media-controls-timeline {
+    background-color: #555;
+    border-radius: 6px;
+    height: 5px;
+}
+
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider {
+    background-color: #444;
+}
